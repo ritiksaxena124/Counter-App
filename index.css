@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  
+}
+body {
+  background-color: #1b244a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  color: #ffff;
+  grid-gap: 40px;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 7px;
+}
+
+.heading {
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.points-viewer {
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 30px;
+  background-color: black;
+  border-radius: 7px;
+}
+.total-points {
+  font-size: 130px;
+  font-weight: 900;
+}
+.points-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px 0px;
+}
+
+.points {
+  border: 1px solid white;
+  font-size: 30px;
+  padding: 7px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.13s ease-in-out;
+}
+
+.points:hover {
+  background-color: #fff;
+  color: #1b244a;
+}
+
+#btn {
+  grid-column: 1 / -1;
+  border: none;
+  padding: 14px 20px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

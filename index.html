@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Counter App</title>
+  </head>
+  <body>
+    <section class="main">
+      <!-- LEFT SECTION -->
+      <div class="left">
+        <h1 class="heading">Home</h1>
+        <div class="points-viewer">
+          <p class="total-points" id="home-points"></p>
+        </div>
+        <div class="points-wrapper">
+          <p class="points" onclick="incrementBy1('home')">+1</p>
+          <p class="points" onclick="incrementBy2('home')">+2</p>
+          <p class="points" onclick="incrementBy3('home')">+3</p>
+        </div>
+      </div>
+      <!-- RIGHT SECTION -->
+      <div class="right">
+        <h1 class="heading">Guest</h1>
+        <div class="points-viewer">
+          <p class="total-points" id="guest-points"></p>
+        </div>
+        <div class="points-wrapper">
+          <p class="points" onclick="incrementBy1('guest')">+1</p>
+          <p class="points" onclick="incrementBy2('guest')">+2</p>
+          <p class="points" onclick="incrementBy3('guest')">+3</p>
+        </div>
+      </div>
+
+      <button id="btn" onclick="reset()">Reset Game</button>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
